@@ -6,6 +6,6 @@ Pod::Spec.new do |spec|
   spec.authors      = { 't5online' => 'yslee@t5online.com' }
   spec.summary      = 'PreferenceModule(Nebula)'
   spec.source       = { :git => 'https://github.com/t5online-inc/PreferenceModule.git' }
-  spec.source_files = 'ios/PreferenceModule/Shared/*.{h,m}'
+  spec.source_files = 'ios/PreferenceModule/Shared/**/*.{h,m}'
   spec.framework    = 'Foundation', 'UIKit'
 end
