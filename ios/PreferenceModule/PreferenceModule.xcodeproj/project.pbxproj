@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF7F14911EF0F82200E637EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F14901EF0F82200E637EB /* main.m */; };
+		EF7F14941EF0F82200E637EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F14931EF0F82200E637EB /* AppDelegate.m */; };
+		EF7F14971EF0F82200E637EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F14961EF0F82200E637EB /* ViewController.m */; };
+		EF7F149A1EF0F82200E637EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7F14981EF0F82200E637EB /* Main.storyboard */; };
+		EF7F149C1EF0F82200E637EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7F149B1EF0F82200E637EB /* Assets.xcassets */; };
+		EF7F149F1EF0F82200E637EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7F149D1EF0F82200E637EB /* LaunchScreen.storyboard */; };
+		EF7F14AC1EF0F8D200E637EB /* PreferencePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F14AB1EF0F8D200E637EB /* PreferencePlugin.m */; };
+		EF7F14AF1EF0F99500E637EB /* PreferenceService.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F14AE1EF0F99500E637EB /* PreferenceService.m */; };
+		F683E9387E4250E377F0060F /* libPods-PreferenceModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E87C70094BB06C85332760 /* libPods-PreferenceModule.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32E87C70094BB06C85332760 /* libPods-PreferenceModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PreferenceModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		731E3598FC8AEAFCB9BB859A /* Pods-PreferenceModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreferenceModule.release.xcconfig"; path = "Pods/Target Support Files/Pods-PreferenceModule/Pods-PreferenceModule.release.xcconfig"; sourceTree = "<group>"; };
+		77D3A62988615AA7D6EF7D26 /* Pods-PreferenceModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreferenceModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PreferenceModule/Pods-PreferenceModule.debug.xcconfig"; sourceTree = "<group>"; };
+		EF7F148C1EF0F82200E637EB /* PreferenceModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreferenceModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7F14901EF0F82200E637EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF7F14921EF0F82200E637EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF7F14931EF0F82200E637EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF7F14951EF0F82200E637EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF7F14961EF0F82200E637EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF7F14991EF0F82200E637EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF7F149B1EF0F82200E637EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF7F149E1EF0F82200E637EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF7F14A01EF0F82200E637EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7F14AA1EF0F8D200E637EB /* PreferencePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencePlugin.h; sourceTree = "<group>"; };
+		EF7F14AB1EF0F8D200E637EB /* PreferencePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencePlugin.m; sourceTree = "<group>"; };
+		EF7F14AD1EF0F99500E637EB /* PreferenceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceService.h; sourceTree = "<group>"; };
+		EF7F14AE1EF0F99500E637EB /* PreferenceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF7F14891EF0F82200E637EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F683E9387E4250E377F0060F /* libPods-PreferenceModule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A175A9DCF4D80208F27DF94F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32E87C70094BB06C85332760 /* libPods-PreferenceModule.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF7F14831EF0F82200E637EB = {
+			isa = PBXGroup;
+			children = (
+				EF7F14A71EF0F85C00E637EB /* Shared */,
+				EF7F148E1EF0F82200E637EB /* PreferenceModule */,
+				EF7F148D1EF0F82200E637EB /* Products */,
+				F84FA3C745DA35A55B986738 /* Pods */,
+				A175A9DCF4D80208F27DF94F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF7F148D1EF0F82200E637EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F148C1EF0F82200E637EB /* PreferenceModule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF7F148E1EF0F82200E637EB /* PreferenceModule */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F14921EF0F82200E637EB /* AppDelegate.h */,
+				EF7F14931EF0F82200E637EB /* AppDelegate.m */,
+				EF7F14951EF0F82200E637EB /* ViewController.h */,
+				EF7F14961EF0F82200E637EB /* ViewController.m */,
+				EF7F14981EF0F82200E637EB /* Main.storyboard */,
+				EF7F149B1EF0F82200E637EB /* Assets.xcassets */,
+				EF7F149D1EF0F82200E637EB /* LaunchScreen.storyboard */,
+				EF7F14A01EF0F82200E637EB /* Info.plist */,
+				EF7F148F1EF0F82200E637EB /* Supporting Files */,
+			);
+			path = PreferenceModule;
+			sourceTree = "<group>";
+		};
+		EF7F148F1EF0F82200E637EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F14901EF0F82200E637EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF7F14A71EF0F85C00E637EB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F14A81EF0F8BC00E637EB /* Plugin */,
+				EF7F14A91EF0F8BC00E637EB /* Service */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EF7F14A81EF0F8BC00E637EB /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F14AA1EF0F8D200E637EB /* PreferencePlugin.h */,
+				EF7F14AB1EF0F8D200E637EB /* PreferencePlugin.m */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		EF7F14A91EF0F8BC00E637EB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F14AD1EF0F99500E637EB /* PreferenceService.h */,
+				EF7F14AE1EF0F99500E637EB /* PreferenceService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F84FA3C745DA35A55B986738 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77D3A62988615AA7D6EF7D26 /* Pods-PreferenceModule.debug.xcconfig */,
+				731E3598FC8AEAFCB9BB859A /* Pods-PreferenceModule.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF7F148B1EF0F82200E637EB /* PreferenceModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7F14A31EF0F82200E637EB /* Build configuration list for PBXNativeTarget "PreferenceModule" */;
+			buildPhases = (
+				6EFFE600BC0D37D53AD10977 /* [CP] Check Pods Manifest.lock */,
+				EF7F14881EF0F82200E637EB /* Sources */,
+				EF7F14891EF0F82200E637EB /* Frameworks */,
+				EF7F148A1EF0F82200E637EB /* Resources */,
+				C2AC3EB3CA76D562975F39CA /* [CP] Embed Pods Frameworks */,
+				04BD061CF3740CA6C0AE7B42 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PreferenceModule;
+			productName = PreferenceModule;
+			productReference = EF7F148C1EF0F82200E637EB /* PreferenceModule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF7F14841EF0F82200E637EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = t5online;
+				TargetAttributes = {
+					EF7F148B1EF0F82200E637EB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EF7F14871EF0F82200E637EB /* Build configuration list for PBXProject "PreferenceModule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF7F14831EF0F82200E637EB;
+			productRefGroup = EF7F148D1EF0F82200E637EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF7F148B1EF0F82200E637EB /* PreferenceModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF7F148A1EF0F82200E637EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7F149F1EF0F82200E637EB /* LaunchScreen.storyboard in Resources */,
+				EF7F149C1EF0F82200E637EB /* Assets.xcassets in Resources */,
+				EF7F149A1EF0F82200E637EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04BD061CF3740CA6C0AE7B42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PreferenceModule/Pods-PreferenceModule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EFFE600BC0D37D53AD10977 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2AC3EB3CA76D562975F39CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PreferenceModule/Pods-PreferenceModule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF7F14881EF0F82200E637EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7F14971EF0F82200E637EB /* ViewController.m in Sources */,
+				EF7F14AF1EF0F99500E637EB /* PreferenceService.m in Sources */,
+				EF7F14941EF0F82200E637EB /* AppDelegate.m in Sources */,
+				EF7F14911EF0F82200E637EB /* main.m in Sources */,
+				EF7F14AC1EF0F8D200E637EB /* PreferencePlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF7F14981EF0F82200E637EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7F14991EF0F82200E637EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF7F149D1EF0F82200E637EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7F149E1EF0F82200E637EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF7F14A11EF0F82200E637EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF7F14A21EF0F82200E637EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF7F14A41EF0F82200E637EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D3A62988615AA7D6EF7D26 /* Pods-PreferenceModule.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PreferenceModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.t5online.PreferenceModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF7F14A51EF0F82200E637EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 731E3598FC8AEAFCB9BB859A /* Pods-PreferenceModule.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PreferenceModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.t5online.PreferenceModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF7F14871EF0F82200E637EB /* Build configuration list for PBXProject "PreferenceModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7F14A11EF0F82200E637EB /* Debug */,
+				EF7F14A21EF0F82200E637EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7F14A31EF0F82200E637EB /* Build configuration list for PBXNativeTarget "PreferenceModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7F14A41EF0F82200E637EB /* Debug */,
+				EF7F14A51EF0F82200E637EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF7F14841EF0F82200E637EB /* Project object */;
+}
