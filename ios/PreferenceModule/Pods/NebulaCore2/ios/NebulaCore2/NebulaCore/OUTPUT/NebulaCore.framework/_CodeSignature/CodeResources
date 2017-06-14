@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/NBPluginService.h</key>
 		<data>
-		jmjlfW5qw/5g5ZZnI4OWITRrDm8=
+		livYJejA/2Ipfhidmuf7lyBZnBA=
 		</data>
 		<key>Headers/NBWebViewController.h</key>
 		<data>
@@ -36,9 +36,9 @@
 		<data>
 		sYuvGA6l0Uh2NPi7dR4IoT1I634=
 		</data>
-		<key>Headers/NSObject+NBMultiParamPerfom.h</key>
+		<key>Headers/NSObject+NBMultiParamPerform.h</key>
 		<data>
-		lUEFjJfVxlRDwsXkUsi85Sx7MXI=
+		8fAtcCmn8wHsnj+9ogFxD+SjmhA=
 		</data>
 		<key>Headers/NSString+Coding.h</key>
 		<data>
@@ -111,11 +111,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jmjlfW5qw/5g5ZZnI4OWITRrDm8=
+			livYJejA/2Ipfhidmuf7lyBZnBA=
 			</data>
 			<key>hash2</key>
 			<data>
-			/EskKFjhzFXR25MwCzNdXYdovDlyxJJurqXOL3fVhRg=
+			5wvjeZHexN+jVUb1LO03jcsbjY+2TQ7mYu9iggvPHJk=
 			</data>
 		</dict>
 		<key>Headers/NBWebViewController.h</key>
@@ -151,15 +151,15 @@
 			pPEUIqcLX9c3nK7FI4hsa0jLsu3TaReLjuv0yvs+Tvg=
 			</data>
 		</dict>
-		<key>Headers/NSObject+NBMultiParamPerfom.h</key>
+		<key>Headers/NSObject+NBMultiParamPerform.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lUEFjJfVxlRDwsXkUsi85Sx7MXI=
+			8fAtcCmn8wHsnj+9ogFxD+SjmhA=
 			</data>
 			<key>hash2</key>
 			<data>
-			dUesdjYyXRhpyAQBMszv8/SVPibvbH7YUCewT4fpFVo=
+			m8g4bUsvtvCR5IerQeBtzpj7mI5Raq0Qr1NStVgqBjo=
 			</data>
 		</dict>
 		<key>Headers/NSString+Coding.h</key>

@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <NebulaCore/NBPlugin.h>
 
+#define PLUGIN_GROUP_PREFERENCE @"preference"
+
 @interface PreferencePlugin : NBPlugin
 
 - (void)get:(NSString*)key defaultValue:(NSString*)defaultValue;
