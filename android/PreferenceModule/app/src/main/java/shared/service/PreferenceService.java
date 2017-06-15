@@ -10,6 +10,8 @@ import android.content.SharedPreferences;
 
 public class PreferenceService {
 
+    public static final String SERVICE_KEY_PREFERENCE = "PreferenceService";
+
     private Context context;
     private SharedPreferences prefs;
 
