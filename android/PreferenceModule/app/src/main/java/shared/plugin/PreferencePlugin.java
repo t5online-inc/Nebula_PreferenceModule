@@ -12,6 +12,8 @@ import org.json.JSONObject;
 
 public class PreferencePlugin extends Plugin {
 
+    public static final String PLUGIN_GROUP_PREFERENCE = "preference";
+
     public void get(String key, String defaultValue) {
         String ret = "";
         try {
