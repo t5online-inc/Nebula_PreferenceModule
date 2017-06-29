@@ -15,35 +15,56 @@
 - (void)get:(NSString*)key defaultValue:(NSString*)defaultValue
 {
     NSString* ret = [[Nebula serviceWithKey:SERVICE_KEY_PREFERENCE] getPreference:key defaultValue:defaultValue];
-    NSDictionary * dict = [NSDictionary dictionaryWithObject:ret forKey:@"value"];
-    [self resolve:dict];
+    NSDictionary* retData = [NSDictionary dictionaryWithObjectsAndKeys:
+                             @(STATUS_CODE_SUCCESS) , @"code",
+                             ret , @"message",
+                             nil];
+    [self resolve:retData];
 }
 
 - (void)set:(NSString*)key value:(NSString*)value
 {
+    NSInteger statusCode = STATUS_CODE_ERROR;
+    
     if([[Nebula serviceWithKey:SERVICE_KEY_PREFERENCE] setPreference:value forKey:key]) {
-        [self resolve];
-    } else {
-        [self reject];
+        statusCode = STATUS_CODE_SUCCESS;
     }
+    
+    NSDictionary* retData = [NSDictionary dictionaryWithObjectsAndKeys:
+                             @(statusCode) , @"code",
+                             @"" , @"message",
+                             nil];
+    [self resolve:retData];
 }
 
 - (void)remove:(NSString *)key
 {
+    NSInteger statusCode = STATUS_CODE_ERROR;
+    
     if([[Nebula serviceWithKey:SERVICE_KEY_PREFERENCE] removePreference:key]) {
-        [self resolve];
-    } else {
-        [self reject];
+        statusCode = STATUS_CODE_SUCCESS;
     }
+    
+    NSDictionary* retData = [NSDictionary dictionaryWithObjectsAndKeys:
+                             @(statusCode) , @"code",
+                             @"" , @"message",
+                             nil];
+    [self resolve:retData];
 }
 
 - (void)removeAll
 {
+    NSInteger statusCode = STATUS_CODE_ERROR;
+    
     if([[Nebula serviceWithKey:SERVICE_KEY_PREFERENCE] removeAllPreference]) {
-        [self resolve];
-    } else {
-        [self reject];
+        statusCode = STATUS_CODE_SUCCESS;
     }
+    
+    NSDictionary* retData = [NSDictionary dictionaryWithObjectsAndKeys:
+                             @(statusCode) , @"code",
+                             @"" , @"message",
+                             nil];
+    [self resolve:retData];
 }
 
 @end
