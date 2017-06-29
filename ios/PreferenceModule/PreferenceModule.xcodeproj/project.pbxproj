@@ -171,6 +171,7 @@
 				TargetAttributes = {
 					EF7F148B1EF0F82200E637EB = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9LGNSY89WE;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -386,6 +387,7 @@
 			baseConfigurationReference = 77D3A62988615AA7D6EF7D26 /* Pods-PreferenceModule.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9LGNSY89WE;
 				INFOPLIST_FILE = PreferenceModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.t5online.PreferenceModule;
@@ -398,6 +400,7 @@
 			baseConfigurationReference = 731E3598FC8AEAFCB9BB859A /* Pods-PreferenceModule.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9LGNSY89WE;
 				INFOPLIST_FILE = PreferenceModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.t5online.PreferenceModule;
