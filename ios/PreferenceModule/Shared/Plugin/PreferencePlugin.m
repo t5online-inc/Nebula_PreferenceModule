@@ -15,55 +15,44 @@
 - (void)get:(NSString*)key defaultValue:(NSString*)defaultValue
 {
     NSString* ret = [[Nebula serviceWithKey:SERVICE_KEY_PREFERENCE] getPreference:key defaultValue:defaultValue];
-    NSDictionary* retData = [NSDictionary dictionaryWithObjectsAndKeys:
-                             @(STATUS_CODE_SUCCESS) , @"code",
-                             ret , @"message",
-                             nil];
+    
+    NSMutableDictionary* retData = [NSMutableDictionary dictionary];
+    [retData setObject:@(STATUS_CODE_SUCCESS) forKey:@"code"];
+    [retData setObject:ret forKey:@"message"];
+    
     [self resolve:retData];
 }
 
 - (void)set:(NSString*)key value:(NSString*)value
 {
-    NSInteger statusCode = STATUS_CODE_ERROR;
+    BOOL isSuccess = [[Nebula serviceWithKey:SERVICE_KEY_PREFERENCE] setPreference:value forKey:key];
     
-    if([[Nebula serviceWithKey:SERVICE_KEY_PREFERENCE] setPreference:value forKey:key]) {
-        statusCode = STATUS_CODE_SUCCESS;
-    }
+    NSMutableDictionary* retData = [NSMutableDictionary dictionary];
+    [retData setObject:@(isSuccess ? STATUS_CODE_SUCCESS : STATUS_CODE_ERROR) forKey:@"code"];
+    [retData setObject:@"" forKey:@"message"];
     
-    NSDictionary* retData = [NSDictionary dictionaryWithObjectsAndKeys:
-                             @(statusCode) , @"code",
-                             @"" , @"message",
-                             nil];
     [self resolve:retData];
 }
 
 - (void)remove:(NSString *)key
 {
-    NSInteger statusCode = STATUS_CODE_ERROR;
+    BOOL isSuccess = [[Nebula serviceWithKey:SERVICE_KEY_PREFERENCE] removePreference:key];
     
-    if([[Nebula serviceWithKey:SERVICE_KEY_PREFERENCE] removePreference:key]) {
-        statusCode = STATUS_CODE_SUCCESS;
-    }
+    NSMutableDictionary* retData = [NSMutableDictionary dictionary];
+    [retData setObject:@(isSuccess ? STATUS_CODE_SUCCESS : STATUS_CODE_ERROR) forKey:@"code"];
+    [retData setObject:@"" forKey:@"message"];
     
-    NSDictionary* retData = [NSDictionary dictionaryWithObjectsAndKeys:
-                             @(statusCode) , @"code",
-                             @"" , @"message",
-                             nil];
     [self resolve:retData];
 }
 
 - (void)removeAll
 {
-    NSInteger statusCode = STATUS_CODE_ERROR;
+    BOOL isSuccess = [[Nebula serviceWithKey:SERVICE_KEY_PREFERENCE] removeAllPreference];
     
-    if([[Nebula serviceWithKey:SERVICE_KEY_PREFERENCE] removeAllPreference]) {
-        statusCode = STATUS_CODE_SUCCESS;
-    }
+    NSMutableDictionary* retData = [NSMutableDictionary dictionary];
+    [retData setObject:@(isSuccess ? STATUS_CODE_SUCCESS : STATUS_CODE_ERROR) forKey:@"code"];
+    [retData setObject:@"" forKey:@"message"];
     
-    NSDictionary* retData = [NSDictionary dictionaryWithObjectsAndKeys:
-                             @(statusCode) , @"code",
-                             @"" , @"message",
-                             nil];
     [self resolve:retData];
 }
 
